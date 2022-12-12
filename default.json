@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", "schedule:earlyMondays"],
+  "labels": ["dependencies"],
+  "timezone": "Asia/Tokyo",
+  "rangeStrategy": "bump",
+  "semanticCommitType": "chore",
+  "packageRules": [
+    {
+      "groupName": "dependencies",
+      "matchUpdateTypes": ["minor", "patch"]
+    }
+  ],
+  "major": {
+    "enabled": false
+  },
+  "stabilityDays": 3
+}
